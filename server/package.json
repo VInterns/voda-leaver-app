@@ -1,0 +1,17 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "voda-leaver-app backend server",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "mern"
+  ],
+  "author": "Voda Interns",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^3.5.2"
+  }
+}
