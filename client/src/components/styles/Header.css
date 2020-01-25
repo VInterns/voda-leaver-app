@@ -1,0 +1,13 @@
+#container{
+    background: #fff;
+    border: 1px solid #e60000;
+}
+
+#header-title{
+    font-family: VodafoneRegular;
+    display: inline-block;
+    margin: 6px 0 0 10px;
+    font-weight: bold;
+    font-size: 25px;
+    color: #e60000;
+}

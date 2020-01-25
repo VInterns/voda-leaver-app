@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'VodafoneRegular';
+  src: local('VodafoneRegular'), url(./assets/fonts/VodafoneRg-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Soin Sans Neue';
+  src: local('Soin Sans Neue'), url("./assets/fonts/Stawix - SoinSansNeue-Medium.otf") format("truetype");
+}

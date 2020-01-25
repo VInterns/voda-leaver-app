@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 import LandingPage from './components/LandingPage';
 import ChatPage from './components/ChatPage';
+import Login from "./components/Login";
 
 /////////////////////////////////////////////////////////////////////////
 class App extends React.Component {
@@ -16,6 +17,7 @@ class App extends React.Component {
         <Switch>
           <Route path = "/" exact component = {LandingPage}/>
           <Route path = "/chat" component = {ChatPage}/>
+          <Route path = "/login" component = {Login}/>
         </Switch>
       </Router>
     );
