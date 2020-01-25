@@ -4,8 +4,8 @@ import {
   Route,
   Switch
 } from 'react-router-dom';
-import LandingPage from './components/LandingPage';
-import ChatPage from './components/ChatPage';
+import LandingPage from './components/Landing';
+import ChatPage from './components/Chat';
 import LoginPage from "./components/Login"
 import HomePage from './components/Home';
 

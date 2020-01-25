@@ -50,7 +50,10 @@
 .navbar .info .name {
     display: inline;
     text-transform: uppercase;
+    font-weight: bold;
 }
+
+
 .navbar .info .photo {
     margin-left: 15px;
     border-radius: 50%;

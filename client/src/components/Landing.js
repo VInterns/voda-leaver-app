@@ -3,7 +3,7 @@ import './styles/LandingPage.css';
 import Login from './Login';
 
 /////////////////////////////////////////////////////////////////////////
-class LandingPage extends React.Component{
+class Landing extends React.Component{
 
     render(){
         return(
@@ -16,4 +16,4 @@ class LandingPage extends React.Component{
 
 
 /////////////////////////////////////////////////////////////////////////
-export default LandingPage;
+export default Landing;

@@ -11,6 +11,14 @@ import exitImg from '../assets/images/exit-100.png';
 /////////////////////////////////////////////////////////////////////////
 class Login extends React.Component{
 
+    constructor(props) {
+        super(props);
+
+        this.state = {
+
+        }
+    }
+
 
     render(){
         return(
@@ -46,7 +54,10 @@ class Login extends React.Component{
                                 <Form.Group className = "input-container" controlId = "formBasicPassword">
                                     <Form.Control className = "input" type = "password" placeholder = "Your password"/>
                                 </Form.Group>
-                                <Button className = "button" type="submit" bg = "#e60000">
+                                <Button
+                                    className = "button"
+                                    type="submit"
+                                    bg = "#e60000">
                                     Login
                                 </Button>
                             </Form>
