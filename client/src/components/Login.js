@@ -21,7 +21,6 @@ class Login extends React.Component{
                             <Image src = {logoImg}
                                    className = "logo"
                                    alt = "Vodafone Logo"
-
                             />
                         </div>
                         <div className = "middle">
@@ -45,7 +44,7 @@ class Login extends React.Component{
                                     <Form.Control className = "input" type = "email" placeholder = "Organization email"/>
                                 </Form.Group>
                                 <Form.Group className = "input-container" controlId = "formBasicPassword">
-                                    <Form.Control className = "input" type = "password" placeholder = "Your Password"/>
+                                    <Form.Control className = "input" type = "password" placeholder = "Your password"/>
                                 </Form.Group>
                                 <Button className = "button" type="submit" bg = "#e60000">
                                     Login

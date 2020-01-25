@@ -5,6 +5,8 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/fonts/VodafoneRg-Regular.ttf';
+import './assets/fonts/century-gothic.ttf';
+import './assets/fonts/Touche W03 Semibold.ttf';
 import './assets/fonts/Stawix - SoinSansNeue-Medium.otf';
 
 ReactDOM.render(<App />, document.getElementById('root'));

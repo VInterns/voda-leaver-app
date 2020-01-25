@@ -21,3 +21,13 @@ code {
   font-family: 'Soin Sans Neue';
   src: local('Soin Sans Neue'), url("./assets/fonts/Stawix - SoinSansNeue-Medium.otf") format("truetype");
 }
+
+@font-face {
+  font-family: 'Century Gothic';
+  src: local('Century Gothic'), url("./assets/fonts/century-gothic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Touche Semibold";
+  src: url("./assets/fonts/Touche W03 Semibold.ttf") format("truetype");
+}
