@@ -7,6 +7,7 @@ import {faFileExcel} from "@fortawesome/free-solid-svg-icons";
 import Header from "./Header";
 import "./styles/Home.css";
 
+/////////////////////////////////////////////////////////////////////////
 class Home extends React.Component{
     constructor(props) {
         super(props);
@@ -67,4 +68,5 @@ class Home extends React.Component{
     }
 }
 
+/////////////////////////////////////////////////////////////////////////
 export default Home;

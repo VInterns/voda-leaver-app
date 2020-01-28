@@ -1,26 +1,27 @@
-const express = require('express')
-const morgan = require('morgan');
-const bodyParser = require('body-parser');
-const router = require('./routes/router');
+require("dotenv").config();
+const http = require("http");
 const dbModule = require('./config/db');
+const {getPort} = require("./config/utilities");
+const configServer = require("./config/app-config");
 
-const app = express()
-const port = 4000
+/////////////////////////////////////////////////////////////////////////
+const port = getPort();
+let server;
 
-
+/////////////////////////////////////////////////////////////////////////
 dbModule.connectToDB();
 
+/////////////////////////////////////////////////////////////////////////
+let app = configServer();
+app.set("port", port);
+server = http.createServer(app);
+server.on("listening", onListening);
+server.listen(port);
 
 
-app.get('/', (req, res) => res.send('Hello World!'))
-app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*"); // update to match the domain you will make the request from
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    next();
-});
-app.use(morgan('combined'));
-app.use(bodyParser.json());
-app.use('/v', router);
-
-
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+/////////////////////////////////////////////////////////////////////////
+function onListening() {
+    const addr = server.address();
+    const bind = typeof addr === "string" ? `pipe ${addr}` : `${addr.port}`;
+    console.log(`[+] Server listening on localhost:${bind}`);
+}

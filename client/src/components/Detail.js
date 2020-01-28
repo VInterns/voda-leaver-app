@@ -1,5 +1,7 @@
 import React from "react";
+import "./styles/Detail.css";
 
+/////////////////////////////////////////////////////////////////////////
 class Detail  extends React.Component{
     constructor(props) {
         super(props);
@@ -17,21 +19,29 @@ class Detail  extends React.Component{
         this.setState({
             detail: retDetail
         })
-
     }
 
     render() {
         const {detail} = this.state;
 
         return(
-            <div>
-                <div>
-                    {detail.status}
+            <div className = "detail-container">
+                <div className = "top-panel">
+                    <h2>Leaver Details</h2>
+                    <div className = "leaver-info">
+                        <div className = "row-info">
+                            <label className = "key">Staff ID</label>
+                            <label className = "value">{detail.staffID}</label>
+                        </div>
+                    </div>
+                </div>
+                <div className = "bottom-panel">
+                    down panel
                 </div>
             </div>
         )
     }
 }
 
-
+/////////////////////////////////////////////////////////////////////////
 export default Detail;

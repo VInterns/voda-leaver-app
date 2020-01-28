@@ -5,7 +5,9 @@ import {
 } from 'react-bootstrap';
 import './styles/Request.css';
 import axios from 'axios';
+import {FETCH_REQUESTS_URL} from "../api/api";
 
+/////////////////////////////////////////////////////////////////////////
 class Request extends React.Component{
 
 
@@ -22,24 +24,19 @@ class Request extends React.Component{
 
     componentDidMount() {
         this.fetchRequestsData();
-        this.timer = setInterval(() => this.fetchRequestsData(), 5000);
-    }
-
-    componentWillUnmount() {
-        clearInterval(this.timer);
-        this.timer = null;
+        //this.timer = setInterval(() => this.fetchRequestsData(), 1000000000);
     }
 
     clickButton(req){
       this.props.history.push({
-          pathname: "/phase-3-detail",
+          pathname: "/phase3-detail",
           state: {detail : req}
       })
     }
 
     fetchRequestsData() {
         this.setState({...this.state, isFetching: true});
-        axios.get("http://localhost:4000/v/fetchRequests")
+        axios.get(FETCH_REQUESTS_URL)
             .then( (res) => {
                 const retRequests = res.data;
                // console.log(res.data)
@@ -54,15 +51,8 @@ class Request extends React.Component{
 
     render() {
         const {requests} = this.state;
-
-        if (this.state.requests === null){
             return (
-                <di>Data Wasn't Fetched!!</di>
-            )
-        }
-        else {
-            return (
-                <div>
+                <div className = "request">
                     <h1 id = "wf">WF Table</h1>
                     <Table id = "requests">
                         <tbody>
@@ -77,7 +67,7 @@ class Request extends React.Component{
                             <td>{request.name}</td>
                             <td>{request.status}</td>
                             <td>
-                                <Button onClick = {() => this.clickButton(request)}>Submit</Button>
+                                <Button onClick = {() => this.clickButton(request)}>See Request</Button>
                             </td>
                         </tr>)}
                         </tbody>
@@ -85,9 +75,7 @@ class Request extends React.Component{
                 </div>
             )
         }
-    }
-
 }
 
-
+/////////////////////////////////////////////////////////////////////////
 export default Request;

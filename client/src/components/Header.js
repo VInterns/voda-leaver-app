@@ -10,6 +10,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBell, faCommentDots} from "@fortawesome/free-solid-svg-icons";
 import {Link} from "react-router-dom";
 
+/////////////////////////////////////////////////////////////////////////
 class Header extends React.Component{
 
     constructor(props) {
@@ -56,4 +57,5 @@ class Header extends React.Component{
     }
 }
 
+/////////////////////////////////////////////////////////////////////////
 export default Header;

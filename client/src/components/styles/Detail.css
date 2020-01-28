@@ -1,0 +1,56 @@
+.detail-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.detail-container .top-panel{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 50%;
+    background: #f4f4f4;
+    /*set display for items*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+h2 {
+    color: #bd0100;
+}
+
+.detail-container .bottom-panel{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: green;
+    text-align: center;
+    color: white;
+}
+
+.leaver-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.row-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.row-info .key {
+    font-weight: bold;
+}
+
+.row-info .value {
+    font-family: Arial, sans-serif;
+    margin-left: 100px;
+}

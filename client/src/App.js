@@ -5,7 +5,6 @@ import {
   Switch
 } from 'react-router-dom';
 import LandingPage from './components/Landing';
-import ChatPage from './components/Chat';
 import LoginPage from "./components/Login"
 import HomePage from './components/Home';
 import RequestPage from './components/Request';
@@ -19,11 +18,10 @@ class App extends React.Component {
       <Router>
         <Switch>
           <Route path = "/" exact component = {LandingPage}/>
-          <Route path = "/chat" component = {ChatPage}/>
           <Route path = "/login" component = {LoginPage}/>
           <Route path = "/home" component = {HomePage}/>
-          <Route path = "/phase-3" component = {RequestPage}/>
-          <Route path = {"/phase-3-detail"} component = {DetailPage}/>
+          <Route path = "/phase3" component = {RequestPage}/>
+          <Route path = {"/phase3-detail"} component = {DetailPage}/>
         </Switch>
       </Router>
     );
