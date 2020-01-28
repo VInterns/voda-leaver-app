@@ -31,7 +31,7 @@ const connectToDB = function(callback) {
                 _db = client.db(dbName);
                 console.log(`[+] Database Connected to: ${_db.namespace}`);
                 
-                return _db;
+                //return _db;
             }
         )
     } catch(e){

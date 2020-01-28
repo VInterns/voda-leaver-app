@@ -4,6 +4,7 @@
   "description": "voda-leaver-app backend server",
   "main": "server.js",
   "scripts": {
+    "start": "nodemon server.js",
     "test": "jest"
   },
   "keywords": [
@@ -12,6 +13,11 @@
   "author": "Voda Interns",
   "license": "ISC",
   "dependencies": {
-    "mongodb": "^3.5.2"
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongodb": "^3.5.2",
+    "morgan": "^1.9.1",
+    "nodemon": "^2.0.2"
   }
 }
